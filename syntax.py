@@ -24,3 +24,24 @@ a,b = 3,2
 print(a,b)
 a,b = b,a
 print(a,b)
+
+mylist = []
+mylist.append(2)
+mylist.append(10)
+mylist.append(a)
+mylist.append(b)
+mylist.append("Y")
+print(mylist[0])
+for x in mylist:
+    print(x)
+
+calculate = 2+a/(5)
+print(calculate)
+print("\n")
+calculate = calculate * 10
+print(calculate)
+print(12**2)
+print(17%5)
+mylist2 = [1,5,6,7,8]
+mylist3 = mylist + mylist2
+print(mylist3)
