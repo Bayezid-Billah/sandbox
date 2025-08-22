@@ -45,3 +45,57 @@ print(17%5)
 mylist2 = [1,5,6,7,8]
 mylist3 = mylist + mylist2
 print(mylist3)
+
+print(len(name))
+print(name.count("m"))
+print(name[1:3])
+
+print(a == 2)
+print(a ==3)
+if a==2 and b==3:
+    print("A = 2 and B = 3")
+else: print("A is not 2")
+if name in ["Homie", "wassup"]:
+    print("wassup homie")
+for x in range(5):
+    print(x)
+print("-------------")
+for x in range(3,6):
+    print(x)
+print("-------------")
+for x in range(3,8,2):
+    print(x)
+print("-------------")
+count = 0
+while count <5:
+    print(count)
+    count +=1
+print("-------------")
+
+def my_function():
+    print("Wassup function")
+def myfunc_arguments(name,age):
+    print("wassup %s, how you doing"%(name))
+myfunc_arguments("KIM", 14)
+my_function()
+
+class MyClass:
+    variable = "Blah"
+
+    def function(self):
+        print("This is from inside the class")
+
+myobjetx = MyClass()
+print(myobjetx.variable)
+myobjetx.function()
+
+phonebook = {}
+phonebook["yeah"] = 102930
+phonebook["no"] = 12312907
+phonebook["maybe"] = 123123
+print(phonebook)
+for name, number in phonebook.items():
+    print("Phone number of %s is %d" %(name,number))
+
+print("input a string: ")
+string = input()
