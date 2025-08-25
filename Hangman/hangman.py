@@ -7,14 +7,12 @@ def select_word():
     word = random.choice(words).upper()
     while ' ' in word or '-' in word:
         word = random.choice(words).upper()
-    print(word)
     return word
 
 
 def hangman():
     word = select_word()
     word_letters = set(word)
-    print(word_letters)
     used_letters = [] 
     all_letters = set(string.ascii_uppercase)
 
@@ -42,7 +40,7 @@ def hangman():
         print("\n",shown_word,"\n")
                 
     if lives == 0:
-        print("You Died")
+        print("You Died, The word was ",word)
     else:
         print("Congratulations, You win!")
         
